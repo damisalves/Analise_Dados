@@ -32,6 +32,17 @@ O tópico apresentará um dicionário de dados, a realização do mapeamento, o 
 
 ![Dicionário de Dados](https://github.com/damisalves/Template-Repositorio/assets/137001435/9b5021a1-2caa-4afc-9fd5-bda71e207fbb)
 
+# 2.1.1. Observações
+
+A base de dados é descrita por quantidade de voos realizados por mês e ano de acordo com os demais campos.
+
+`distancia_voada_km:` a quantidade descrita de km/h;
+`decolagens:` Refere-se ao número de decolagens que ocorreram entre os aeródromos de origem e destino da etapa;
+`natureza:`  etapas remuneradas que são realizadas sob uma numeração de Horário de Transporte (HOTRAN). Recebem esse nome, pois possuem a característica de serem realizadas regularmente; 
+`passageiros pagos:` Refere-se aos passageiros que ocupam assentos comercializados ao público e que geram receita, com a compra de assentos, para a empresa de transporte aéreo. Incluem-se nesta definição as pessoas que viajam em virtude de ofertas promocionais, as que se valem dos programas de fidelização de clientes, as que se valem dos descontos concedidos pelas empresas, as que viajam com tarifas preferenciais, as pessoas que compram passagem no balcão ou através do site de empresa de transporte aéreo e as pessoas que compram passagem em agências de viagem;
+`passageiros grátis:` Refere-se aos passageiros que ocupam assentos comercializados ao público mas que não geram receita, com a compra de assentos, para a empresa de transporte aéreo. Incluem-se nesta definição as pessoas que viajam gratuitamente, as que se valem dos descontos de funcionários das empresas aéreas e seus agentes, os funcionários de empresas aéreas que viajam a negócios pela própria empresa e os tripulantes ou quem estiver ocupando assento destinado a estes;
+
+
 
 # Índice/Sumário
 
