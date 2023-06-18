@@ -14,11 +14,6 @@ Através da análise exploratória de dados e a partir do estudo quantitativo da
 A organização da análise é composta pelo banco de dados, o tratamento das informações relevantes de acordo com o tema abordado e a estruturação analítica do relatório. 
 A evolução do número de voos domésticos no Brasil tem contribuído para o aumento da conectividade entre as diferentes regiões do país, facilitando o deslocamento de pessoas e bens. Isso tem impactado positivamente o turismo, o comércio e a economia em geral, gerando empregos e aumentando a competitividade do país.
 
-
-<h4 align="center"> 
-	🚧  Em desenvolvimento . . .
-</h4>
-
 # Índice/Sumário
 
 * [Sobre](#sobre-o-projeto)
