@@ -36,11 +36,51 @@ O tópico apresentará um dicionário de dados, a realização do mapeamento, o 
 
 A base de dados é descrita por quantidade de voos realizados por mês e ano de acordo com os demais campos.
 
-`distancia_voada_km:` a quantidade descrita de km/h;
-`decolagens:` Refere-se ao número de decolagens que ocorreram entre os aeródromos de origem e destino da etapa;
-`natureza:`  etapas remuneradas que são realizadas sob uma numeração de Horário de Transporte (HOTRAN). Recebem esse nome, pois possuem a característica de serem realizadas regularmente; 
-`passageiros pagos:` Refere-se aos passageiros que ocupam assentos comercializados ao público e que geram receita, com a compra de assentos, para a empresa de transporte aéreo. Incluem-se nesta definição as pessoas que viajam em virtude de ofertas promocionais, as que se valem dos programas de fidelização de clientes, as que se valem dos descontos concedidos pelas empresas, as que viajam com tarifas preferenciais, as pessoas que compram passagem no balcão ou através do site de empresa de transporte aéreo e as pessoas que compram passagem em agências de viagem;
-`passageiros grátis:` Refere-se aos passageiros que ocupam assentos comercializados ao público mas que não geram receita, com a compra de assentos, para a empresa de transporte aéreo. Incluem-se nesta definição as pessoas que viajam gratuitamente, as que se valem dos descontos de funcionários das empresas aéreas e seus agentes, os funcionários de empresas aéreas que viajam a negócios pela própria empresa e os tripulantes ou quem estiver ocupando assento destinado a estes;
+- `distancia_voada_km:` a quantidade descrita de km/h;
+- `decolagens:` Refere-se ao número de decolagens que ocorreram entre os aeródromos de origem e destino da etapa;
+- `natureza:`  etapas remuneradas que são realizadas sob uma numeração de Horário de Transporte (HOTRAN). Recebem esse nome, pois possuem a característica de serem realizadas regularmente;
+- `passageiros pagos:` Refere-se aos passageiros que ocupam assentos comercializados ao público e que geram receita, com a compra de assentos, para a empresa de transporte aéreo. Incluem-se nesta definição as pessoas que viajam em virtude de ofertas promocionais, as que se valem dos programas de fidelização de clientes, as que se valem dos descontos concedidos pelas empresas, as que viajam com tarifas preferenciais, as pessoas que compram passagem no balcão ou através do site de empresa de transporte aéreo e as pessoas que compram passagem em agências de viagem;
+- `passageiros grátis:` Refere-se aos passageiros que ocupam assentos comercializados ao público mas que não geram receita, com a compra de assentos, para a empresa de transporte aéreo. Incluem-se nesta definição as pessoas que viajam gratuitamente, as que se valem dos descontos de funcionários das empresas aéreas e seus agentes, os funcionários de empresas aéreas que viajam a negócios pela própria empresa e os tripulantes ou quem estiver ocupando assento destinado a estes.
+
+  # 2.2 Mapeamento dos Dados
+  
+Para melhor identificar quais as cidades dos aeroportos de origem e destino, foram realizadas as criações das dimensões Cidade Origem e Cidade Destino.
+
+![Mapeamento de Dados - Origem](https://github.com/damisalves/Analise_Dados/assets/137001435/8e1860ee-632f-4e0e-86e7-e28164fdfe90) ![Mapeamento de Dados - Destino](https://github.com/damisalves/Analise_Dados/assets/137001435/3fccd5c7-85a3-49a2-be7b-7970499104e1)
+
+# 2.3 Organização e Limpeza dos Dados
+
+# 2.3.1 Extração em CSV e transformação em XLSX
+
+# 2.3.2. Limpeza dos dados em branco
+
+# 2.3.3. Remoção das colunas: 
+
+As colunas: CORREIO_KG, ASK, ATK, RTK, CARGA_GRATIS_KM, CARGA_PAGA_KM, CORREIO_KM, PAYLOAD, BAGAGEM_KM foram removidas por serem desnecessárias para análise. 
+
+# 2.3.4. Filtragem e Classificação:
+
+Foi realizado a filtragem das colunas: NATUREZA: doméstica e GRUPO_DE_VOO: regular, para melhor visualização dos dados e identificação dos critérios necessários para análise. 
+
+# 2.4 Transformação
+
+Para melhor calcular as horas voadas, foi transformado a coluna dimensão HORAS_VOADAS em MIN_VOADA, multiplicando a dimensão HORAS_VOADAS vezes 60, para identificar a quantidade de minutos.
+
+![Transformação](https://github.com/damisalves/Analise_Dados/assets/137001435/a777d7b1-fdae-4f66-93a8-bf11e1444217)
+
+# 2.5 Processo de Modelagem
+
+O processo de modelagem foi realizado seguindo os preceitos da modelagem multidimensional, no modelo Star Schema (Esquema Estrela), além disso foi realizado a criação de medidas e a criação das dimensões de Cidade Destino, Cidade Origem e Calendário
+
+![Processo de Modelagem - 1](https://github.com/damisalves/Analise_Dados/assets/137001435/9fd73df2-4a29-4928-b360-246fbaa27e0a)
+
+![Processo de Modelagem -2](https://github.com/damisalves/Analise_Dados/assets/137001435/9124e944-59cd-4b25-85c4-ad4118ddb950)
+
+
+
+
+
+
 
 
 
