@@ -1,4 +1,4 @@
-# Análise de Dados Exploratória dos Voos Domésticos no Brasil
+# A Evolução dos Voos Domésticos no Brasil
 
 ![Capa do Projeto](https://storage.stwonline.com.br/180graus/uploads/ckeditor/pictures/2280353/240919---jet-smart.jpg)
 
@@ -13,22 +13,22 @@ Através da análise exploratória de dados e a partir do estudo quantitativo da
 A organização da análise é composta pelo banco de dados, o tratamento das informações relevantes de acordo com o tema abordado e a estruturação analítica do relatório. 
 A evolução do número de voos domésticos no Brasil tem contribuído para o aumento da conectividade entre as diferentes regiões do país, facilitando o deslocamento de pessoas e bens. Isso tem impactado positivamente o turismo, o comércio e a economia em geral, gerando empregos e aumentando a competitividade do país.
 
-# 1.1 Objetivos
+# 1.1. Objetivos
 
-O objetivo deste estudo é realizar uma Análise Exploratória dos Dados (Exploratory Data Analysis - EDA) do conjunto de dados **voos-anac-2000a2023**, adaptado pelo autor e disponível em data/titanic3.csv; a fim de entender melhor através de dados reais o funcionamento e a evolução dos voos domésticos no país. Especificiamente serão respondidas as seguintes questões de pesquisa:
+O objetivo deste estudo é realizar uma Análise Exploratória dos Dados (Exploratory Data Analysis - EDA) do conjunto de dados **voos-anac-2000a2023**, adaptado pelo autor e disponível em (https://sistemas.anac.gov.br/dadosabertos/Voos%20e%20opera%C3%A7%C3%B5es%20a%C3%A9reas/Dados%20Estat%C3%ADsticos%20do%20Transporte%20A%C3%A9reo/); a fim de entender melhor através de dados reais o funcionamento e a evolução dos voos domésticos no país. Especificiamente serão respondidas as seguintes questões de pesquisa:
 
 1. Quais as regiões do Brasil que mais fazem voos?
 2. Evolução da quantidade de voos no Brasil?
 3. Quais meses e anos tivemos mais voos domésticos?
-4.Qual empresa realiza a maior quantidade de voos?
-5.Quais os maiores destinos por região do Brasil?
-6.Qual a média de horas voadas por companhia e mês?
+4. Qual empresa realiza a maior quantidade de voos?
+5. Quais os maiores destinos por região do Brasil?
+6. Qual a média de horas voadas por companhia e mês?
 
 # 2. Metodologia
 
 O tópico apresentará um dicionário de dados, a realização do mapeamento, o processo de transformação e o tipo de modelagem utilizada.
 
-# 2.1 Dicionário de Dados
+# 2.1. Dicionário de Dados
 
 ![Dicionário de Dados](https://github.com/damisalves/Template-Repositorio/assets/137001435/9b5021a1-2caa-4afc-9fd5-bda71e207fbb)
 
@@ -42,17 +42,21 @@ A base de dados é descrita por quantidade de voos realizados por mês e ano de 
 - `passageiros pagos:` Refere-se aos passageiros que ocupam assentos comercializados ao público e que geram receita, com a compra de assentos, para a empresa de transporte aéreo. Incluem-se nesta definição as pessoas que viajam em virtude de ofertas promocionais, as que se valem dos programas de fidelização de clientes, as que se valem dos descontos concedidos pelas empresas, as que viajam com tarifas preferenciais, as pessoas que compram passagem no balcão ou através do site de empresa de transporte aéreo e as pessoas que compram passagem em agências de viagem;
 - `passageiros grátis:` Refere-se aos passageiros que ocupam assentos comercializados ao público mas que não geram receita, com a compra de assentos, para a empresa de transporte aéreo. Incluem-se nesta definição as pessoas que viajam gratuitamente, as que se valem dos descontos de funcionários das empresas aéreas e seus agentes, os funcionários de empresas aéreas que viajam a negócios pela própria empresa e os tripulantes ou quem estiver ocupando assento destinado a estes.
 
-  # 2.2 Mapeamento dos Dados
+  # 2.2. Mapeamento dos Dados
   
 Para melhor identificar quais as cidades dos aeroportos de origem e destino, foram realizadas as criações das dimensões Cidade Origem e Cidade Destino.
 
 ![Mapeamento de Dados - Origem](https://github.com/damisalves/Analise_Dados/assets/137001435/8e1860ee-632f-4e0e-86e7-e28164fdfe90) ![Mapeamento de Dados - Destino](https://github.com/damisalves/Analise_Dados/assets/137001435/3fccd5c7-85a3-49a2-be7b-7970499104e1)
 
-# 2.3 Organização e Limpeza dos Dados
+# 2.3. Organização e Limpeza dos Dados
 
-# 2.3.1 Extração em CSV e transformação em XLSX
+Foi realizado a extração dos dados brutos no site **anac.com.br** no formato CSV e transformado em XLSX para conexão na plataforma Power BI.
+
+# 2.3.1. Extração em CSV e transformação em XLSX
 
 # 2.3.2. Limpeza dos dados em branco
+
+Não foi necessário a realização de limpeza de dados em branco.
 
 # 2.3.3. Remoção das colunas: 
 
@@ -62,13 +66,13 @@ As colunas: CORREIO_KG, ASK, ATK, RTK, CARGA_GRATIS_KM, CARGA_PAGA_KM, CORREIO_K
 
 Foi realizado a filtragem das colunas: NATUREZA: doméstica e GRUPO_DE_VOO: regular, para melhor visualização dos dados e identificação dos critérios necessários para análise. 
 
-# 2.4 Transformação
+# 2.4. Transformação
 
 Para melhor calcular as horas voadas, foi transformado a coluna dimensão HORAS_VOADAS em MIN_VOADA, multiplicando a dimensão HORAS_VOADAS vezes 60, para identificar a quantidade de minutos.
 
 ![Transformação](https://github.com/damisalves/Analise_Dados/assets/137001435/52148c75-10c9-4e38-80a1-3058cd353cd3)
 
-# 2.5 Processo de Modelagem
+# 2.5. Processo de Modelagem
 
 O processo de modelagem foi realizado seguindo os preceitos da modelagem multidimensional, no modelo Star Schema (Esquema Estrela), além disso foi realizado a criação de medidas e a criação das dimensões de Cidade Destino, Cidade Origem e Calendário
 
