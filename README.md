@@ -1,5 +1,4 @@
-![Dicionário de Dados](https://github.com/damisalves/Template-Repositorio/assets/137001435/74ad0f26-c911-433b-a3ba-171ac24ae594)# Análise de Dados Exploratória dos Voos Domésticos no Brasil
-
+# Análise de Dados Exploratória dos Voos Domésticos no Brasil
 
 ![Capa do Projeto](https://storage.stwonline.com.br/180graus/uploads/ckeditor/pictures/2280353/240919---jet-smart.jpg)
 
