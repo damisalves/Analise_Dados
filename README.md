@@ -66,7 +66,7 @@ Foi realizado a filtragem das colunas: NATUREZA: doméstica e GRUPO_DE_VOO: regu
 
 Para melhor calcular as horas voadas, foi transformado a coluna dimensão HORAS_VOADAS em MIN_VOADA, multiplicando a dimensão HORAS_VOADAS vezes 60, para identificar a quantidade de minutos.
 
-![Transformação](https://github.com/damisalves/Analise_Dados/assets/137001435/a777d7b1-fdae-4f66-93a8-bf11e1444217)
+![Transformação](https://github.com/damisalves/Analise_Dados/assets/137001435/52148c75-10c9-4e38-80a1-3058cd353cd3)
 
 # 2.5 Processo de Modelagem
 
@@ -74,7 +74,45 @@ O processo de modelagem foi realizado seguindo os preceitos da modelagem multidi
 
 ![Processo de Modelagem - 1](https://github.com/damisalves/Analise_Dados/assets/137001435/9fd73df2-4a29-4928-b360-246fbaa27e0a)
 
-![Processo de Modelagem -2](https://github.com/damisalves/Analise_Dados/assets/137001435/9124e944-59cd-4b25-85c4-ad4118ddb950)
+![Processo de Modelagem -2](https://github.com/damisalves/Analise_Dados/assets/137001435/9d831fa8-f3c5-40dd-84c8-00adb1f7f692)
+
+# 3. Análise de Dados
+
+![Análise de Dados - 1](https://github.com/damisalves/Analise_Dados/assets/137001435/20f0289b-20bb-4563-bd44-8cdf7b62c64c)
+
+![Análise de Dados - 2](https://github.com/damisalves/Analise_Dados/assets/137001435/f0141d3a-a44d-4438-81bb-f9ce3f5a69fe)
+
+Conforme dados analisados na ferramenta de analítica Power BI, pode se concluir que todas as questões levantadas na etapa 2 (Metodologia) foram possíveis de serem respondidas.
+
+# 3.1. Quais as regiões do Brasil que mais fazem voos? 
+
+`As regiões que mais realizam voos são as regiões do sudeste e nordeste.`
+
+# 3.2. Evolução da quantidade de voos no Brasil? 
+
+`Podemos destacar que houve um crescimento continuo desde o ano de 2000 a 2022.`
+
+# 3.3. Quais meses e anos tivemos mais voos domésticos? 
+`Houveram picos nos anos de 2011 a 2015 e um declínio nos anos de 2020 e 2021, devido a pandemia no Covid-19. O mês em que mais são realizados voos, é no mês de janeiro.`
+
+# 3.4. Qual empresa realiza a maior quantidade de voos? 
+
+`A empresa que mais realiza voos é a empresa TAM LINHAS AÉREAS S.A.`
+
+# 3.5. Quais os maiores destinos por região do Brasil? 
+
+`Os maiores destinos por regiões são respectivamente: Centro-Oeste: São Paulo e Guarulhos, Sudeste: Rio de Janeiro e São Paulo, Norte: Brasília e Belém, Nordeste: Guarulhos e Recife e Sul: São Paulo e Guarulhos.`
+
+# 3.6. Qual a média de horas voadas por companhia e mês?
+
+`A média de horas voadas é 72 horas mensais. Levando em conta que as maiores companhias áreas TAM LINHAS AÉREAS e GOL LINHAS AÉREAS voam 103 horas mensais, ou seja, 40% a mais que a média geral.`
+
+# REFERÊNCIAS
+- https://www.jusbrasil.com.br/artigos/transporte-aereo-domestico-o-que-significa-quais-sao-suas-aplicacoes/376349086
+- https://www.anac.gov.br/acesso-a-informacao/dados-abertos/areas-de-atuacao/voos-e-operacoes-aereas/dados-estatisticos-do-transporte-aereo/48-dados-estatisticos-do-transporte-aereo
+- https://sistemas.anac.gov.br/dadosabertos/Voos%20e%20opera%C3%A7%C3%B5es%20a%C3%A9reas/Dados%20Estat%C3%ADsticos%20do%20Transporte%20A%C3%A9reo/
+
+
 
 
 
