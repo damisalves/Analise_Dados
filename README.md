@@ -1,4 +1,4 @@
-# Análise de Dados Exploratória dos Voos Domésticos no Brasil
+![Dicionário de Dados](https://github.com/damisalves/Template-Repositorio/assets/137001435/74ad0f26-c911-433b-a3ba-171ac24ae594)# Análise de Dados Exploratória dos Voos Domésticos no Brasil
 
 
 ![Capa do Projeto](https://storage.stwonline.com.br/180graus/uploads/ckeditor/pictures/2280353/240919---jet-smart.jpg)
@@ -13,6 +13,26 @@ O presente trabalho tem como objetivo mostrar a evolução desses aspectos basea
 Através da análise exploratória de dados e a partir do estudo quantitativo das informações, o propósito é a estruturação dos dados demonstrando a evolução da quantidade de voos de acordo com os dados das diversas companhias aéreas, que oferecem diferentes opções de serviços aos passageiros, demonstrando, em conjunto, a mensuração das regiões do país com maior incidência de viagens e o tempo recorrido para a execução das mesmas.  
 A organização da análise é composta pelo banco de dados, o tratamento das informações relevantes de acordo com o tema abordado e a estruturação analítica do relatório. 
 A evolução do número de voos domésticos no Brasil tem contribuído para o aumento da conectividade entre as diferentes regiões do país, facilitando o deslocamento de pessoas e bens. Isso tem impactado positivamente o turismo, o comércio e a economia em geral, gerando empregos e aumentando a competitividade do país.
+
+# 1.1 Objetivos
+
+O objetivo deste estudo é realizar uma Análise Exploratória dos Dados (Exploratory Data Analysis - EDA) do conjunto de dados **voos-anac-2000a2023**, adaptado pelo autor e disponível em data/titanic3.csv; a fim de entender melhor através de dados reais o funcionamento e a evolução dos voos domésticos no país. Especificiamente serão respondidas as seguintes questões de pesquisa:
+
+1. Quais as regiões do Brasil que mais fazem voos?
+2. Evolução da quantidade de voos no Brasil?
+3. Quais meses e anos tivemos mais voos domésticos?
+4.Qual empresa realiza a maior quantidade de voos?
+5.Quais os maiores destinos por região do Brasil?
+6.Qual a média de horas voadas por companhia e mês?
+
+# 2. Metodologia
+
+O tópico apresentará um dicionário de dados, a realização do mapeamento, o processo de transformação e o tipo de modelagem utilizada.
+
+# 2.1 Dicionário de Dados
+
+![Dicionário de Dados](https://github.com/damisalves/Template-Repositorio/assets/137001435/9b5021a1-2caa-4afc-9fd5-bda71e207fbb)
+
 
 # Índice/Sumário
 
